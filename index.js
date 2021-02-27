@@ -33,13 +33,14 @@ inquirer
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <title>Node Mini Project</title>
 </head>
 <body>
-<h1 id="name">My name is: ${response.name}</h1>
-<h2 id="town">I live in: ${response.town}</h2>
-<h2 id="github">My Github URL: ${response.github}</h2>
-<h2 id="linkedin">My Linkedin URL: ${response.linkedin}</h2>
+<h1 id="name" class='border'>My name is: ${response.name}</h1>
+<h2 id="town" class='border'>I live in: ${response.town}</h2>
+<h2 id="github" class='border'>My Github URL: ${response.github}</h2>
+<h2 id="linkedin" class='border'>My LinkedIn URL: ${response.linkedIn}</h2>
 
 <script type="text/javascript" src="index.js"></script>
 </body>
