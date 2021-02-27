@@ -1,43 +1,6 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 
-// // music should be an object with title, artist, and album properties
-// const music = {
-//     // code here
-//     title: "Mr. Brightside",
-//     artist: "The Killers",
-//     album: "Hot Fuss"
-//   };
-  
-//   // Write code between the <div> tags to output the data from the music object above.
-//   // Use an h2 element for the title and a p element for artist and title
-//   const songSnippet = `
-//     <div class="song">
-//       <h2>${music.title}</h2>
-//       <p>${music.artist}</p>
-//       <p>${music.album}</p>
-//     </div>
-//   `;
-  
-//   const element = document.getElementById("music");
-//   element.innerHTML = songSnippet;
-  
-// const htmlTemplate = `
-// <!DOCTYPE html>
-// <html lang="en">
-// <head>
-//   <meta charset="UTF-8">
-//   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-//   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-//   <title>Template Literals</title>
-// </head>
-// <body>
-//   <div id="music"></div>
-
-// <script type="text/javascript" src="index.js"></script>
-// </body>
-// </html>
-// `;
 inquirer
     .prompt([
         {
@@ -70,13 +33,13 @@ inquirer
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title>Template Literals</title>
+<title>Node Mini Project</title>
 </head>
 <body>
-<div id="music">${response.name}</div>
-<div id="music">${response.town}</div>
-<div id="music">${response.github}</div>
-<div id="music">${response.linkedin}</div>
+<h1 id="name">My name is: ${response.name}</h1>
+<h2 id="town">I live in: ${response.town}</h2>
+<h2 id="github">My Github URL: ${response.github}</h2>
+<h2 id="linkedin">My Linkedin URL: ${response.linkedin}</h2>
 
 <script type="text/javascript" src="index.js"></script>
 </body>
